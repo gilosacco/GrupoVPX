@@ -59,7 +59,7 @@
 
 
 // Ângulos para controlar os movimentos das pernas (incrementos)
-// Perna 1 serve de referência para Pernas (1, 3, 5) e Perna 2 serve de referência para Pernas (2 4, 6)
+// Perna 1 serve de referência para Pernas (1, 3, 5) e Perna 2 serve de referência para Pernas (2, 4, 6)
 
 int P1_LEV_SUBIR = 0;
 int P1_ROT_AVANCAR = 0;
