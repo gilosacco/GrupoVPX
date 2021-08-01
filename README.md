@@ -16,7 +16,7 @@ O trabalho então foi dividido em duas partes. A primeira pensando na lógica da
 
 ## Desenvolvimento
 
-Primeiro começamos pensando na primeira parte, a lógica da movimentação para a caminhada. E antes de escrever o código em C, fizemos os diagramas abaixos para ajudar no nosso processo de desenvolvimento. O primeiro diagrama é sobre a rotina geral da leitura/tomada de decisão de acordo com o que o usuário envia para o robô. Já o segundo é mais voltado para a movimentação em si das pernas, representando a função *mover frente*. Pode-se notar que a lógica é de movimentar sempre 3 pernas intercaladas ao mesmo tempo, de forma que as outras 3 permaneçam no chão durante esse tempo para maior estabilidade da formiga.
+Primeiro começamos pensando na primeira parte, a lógica da movimentação para a caminhada. E antes de escrever o código em C, fizemos os diagramas abaixo para ajudar no nosso processo de desenvolvimento. O primeiro diagrama é sobre a rotina geral da leitura/tomada de decisão de acordo com o que o usuário envia para o robô. Já o segundo é mais voltado para a movimentação em si das pernas, representando a função *mover frente*. Pode-se notar que a lógica é de movimentar sempre 3 pernas intercaladas ao mesmo tempo, de forma que as outras 3 permaneçam no chão durante esse tempo para maior estabilidade da formiga.
 
 <p align="center">
 <img src="diagrama1.png" width ="400">
