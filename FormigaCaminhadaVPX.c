@@ -1,7 +1,7 @@
 //GRUPO VPX - FORMIGA MECATRÔNICA
 
-//Inicialmente como eram vários grupos, dividimos que dois grupos faria a comunicação, e outros dois fariam a lógica da caminhada;
-//Porém como tivemos problems com o hardware, acabou que não teve muita utilidade a lógica da caminhada, mas já haviamos feito bastante coisa
+//Inicialmente como eram vários grupos, dividimos que dois grupos fariam a comunicação, e outros dois fariam a lógica da caminhada;
+//Porém como tivemos problemas com o hardware, acabou que não teve muita utilidade a lógica da caminhada, mas já haviamos feito bastante coisa
 //Por isso esse código já está mais completo sobre essa parte (caminhada)
 
 //Definir posições iniciais (repouso) das pernas: Elevação (LEV) e Rotação (ROT) (Empíricos)
