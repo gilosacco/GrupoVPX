@@ -16,13 +16,11 @@ O trabalho foi então dividido em duas partes. A primeira pensando na lógica da
 
 ## Desenvolvimento
 
-Primeiro começamos pensando na primeira parte, a lógica da movimentação para a caminhada. E antes de escrever o código em C, fizemos os diagramas abaixo para ajudar no nosso processo de desenvolvimento. O primeiro diagrama é sobre a rotina geral da leitura/tomada de decisão de acordo com o que o usuário envia para o robô. Já o segundo é mais voltado para a movimentação em si das pernas, representando a função *mover frente*. Pode-se notar que a lógica é de movimentar sempre 3 pernas intercaladas ao mesmo tempo, de forma que as outras 3 permaneçam no chão durante esse tempo para maior estabilidade da formiga.
+Primeiro começamos pensando na lógica da movimentação para a caminhada. E antes de escrever o código em C, fizemos os diagramas abaixo para ajudar no nosso processo de desenvolvimento. O primeiro diagrama é sobre a rotina geral da leitura/tomada de decisão de acordo com o que o usuário envia para o robô. Já o segundo é mais voltado para a movimentação em si das pernas, representando a função *mover frente*. Pode-se notar que a lógica é de movimentar sempre 3 pernas intercaladas ao mesmo tempo, de forma que as outras 3 permaneçam no chão durante esse tempo para maior estabilidade da formiga.
 
 <p align="center">
 <img src="diagrama1.png" width ="400">
 <img src="diagrama2.png" width="366">
 </p>
 
-A partir desses diagramas foi escrito o código completo com a implementação completa de cada uma das funções. As explicações mais detalhadas estão dentro do próprio código (..).
-
-Para a segunda parte...
+A partir desses diagramas começamos a desenvolver o código [FormigaCaminhadaVPX](FormigaCaminhadaVPX.c), que realiza o controle da trajetória das pernas através de uma lógica incremental em loop dos motores. Também consideramos uma variação inicial dos parâmetros de cada motor, que seriam calculados empiricamente (caso fosse possível). A comunicação nesse código ficou apenas indicada através de comentários, simbolizando onde seria realizada o envio e o recebimento de dados.
