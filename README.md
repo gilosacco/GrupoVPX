@@ -6,7 +6,7 @@ Projeto da Formiga Mecatrônica para a matéria **SEM0544 - Sistemas Embarcados 
 
 * [Giovanna Martins Losacco](https://github.com/gilosacco) (nº 9783491)
 * [Paulo Henrique Couto de Resende Silva](https://github.com/paulohenriquecrs) (nº 10308818)
-* [Vivian Coutinho Nascimento](https://github.com/vivcoutinho) (nº )
+* [Vivian Coutinho Nascimento](https://github.com/vivcoutinho) (nº 10377434)
 
 ## Proposta
 
