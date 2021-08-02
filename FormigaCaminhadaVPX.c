@@ -31,7 +31,7 @@
 #define P6_INICIAL_ROT 60 // Rotação
 
 
-// Criar objetos dos Servos (motores)
+// Servos (motores)
 
 // PERNA 1
 // P1_SERVO_LEV = Servo de elevação da perna 1
