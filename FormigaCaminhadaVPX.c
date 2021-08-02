@@ -99,10 +99,9 @@ int P5_ROT = P5_INICIAL_ROT;
 int P6_LEV = P6_INICIAL_LEV;
 int P6_ROT = P6_INICIAL_ROT;
 
-// Variáveis para sincronização dos movimentos (fase entre os dois conjuntos de pernas)
+// Variável para sincronização dos movimentos (fase entre os dois conjuntos de pernas)
 
 boolean P1_SINC = LOW;
-boolean P2_SINC = LOW;
 
 
 int dir = 0; // Direção do movimento: Repouso (0), Frente (1), Direita (2), Esquerda (3), Trás (4)
@@ -631,7 +630,6 @@ void PosicaoInicial() {
   
   dir = 0;
   P1_SINC = LOW;
-  P2_SINC = LOW;
 
   //Retornar às posições iniciais
   
