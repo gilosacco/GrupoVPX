@@ -30,8 +30,6 @@
 #define P5_ROT_MIN 0
 
 
-
-// Configuracao e definicao da pinagem dos motores
 void main() {
 
 
@@ -39,7 +37,8 @@ void main() {
 
 
   // Criar objetos (Servos)
-
+  // Configuração e definição da pinagem dos servos
+  
   // Perna 1
   Servo P1_SERVO_LEV(p21); // Servo Elevação Perna 1
   Servo P1_SERVO_ROT(p22); // Servo Rotação Perna 1
