@@ -27,7 +27,7 @@ A partir desses diagramas começamos a desenvolver o código [FormigaCaminhadaVP
 
 O outro código [(mbedVPX.c)](mbedVPX.c) roda dentro das duas MBEDS. Ele recebe os ângulos via CAN da Toradex, normaliza com valores máximos e mínimos definidos empiricamente, e envia isso pros motores usando a biblioteca *Servo.h*. Cada MBED é responsável por repassar os valores para 3 motores, o código apenas varia os números dos motores (1,3,5 por 2,4,6).
 
-O objetivo final então do nosso grupo seria que toda a lógica da caminhada fosse realizada dentro da Toradex (que receberia os comandos *frente, trás, direita e esquerda* do usuário), e as MBEDS apenas teriam o código para repassar os valores que cada motor deveria executar. Infelizmente a comunicação CAN entre a Toradex e a MBED não foi bem sucedida.
+O objetivo final então do nosso grupo seria que toda a lógica da caminhada fosse realizada dentro da Toradex (que receberia os comandos *frente, trás, direita e esquerda* do usuário), e ela enviaria os ângulos necessários para as MBEDS. As MBEDS por sua vez, apenas teriam o código para repassar os valores para cada motor executar. Infelizmente a comunicação CAN entre a Toradex e a MBED não foi bem sucedida.
 
 ## Apêndice
 
