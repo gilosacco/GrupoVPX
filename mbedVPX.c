@@ -1,9 +1,12 @@
 //GRUPO VPX - FORMIGA MECATRONICA
 
-//Inicialmente como eram vários grupos, dividimos que dois grupos faria a comunicação, e outros dois fariam a lógica da caminhada;
+//Inicialmente como eram vários grupos, dividimos que dois grupos fariam a comunicação, e outros dois fariam a lógica da caminhada;
 //E o nosso grupo primeiro focou na lógica da caminhada
 //Esse é o código da mbed que recebe o valor de 3 pernas e só repassa esses valores pros motores
-//A outra mbed seria identica, apenas trocando os motores
+// Cada recebimento é de uma mensagem de 2 bits:
+// MOTOR: Indica qual dos 6 servos (3 pernas com elevação e rotação)
+// ANG: Valor do ângulo para o servo (que será normalizado antes)
+//A outra mbed seria identica, apenas trocando os motores: (1 3 5) - > (2 4 6)
 
 #include "mbed.h"
 #include "math.h"
