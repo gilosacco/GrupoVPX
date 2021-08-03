@@ -28,19 +28,6 @@
 
 
 
-// Criacao dos servos
-
-// Perna 1
-Servo P2_SERVO_LEV; // servo elevacao
-Servo P2_SERVO_ROT; // servo rotacao
-// Perna 3  
-Servo P4_SERVO_LEV; // servo elevacao
-Servo P4_SERVO_ROT; // servo rotacao
-// Perna 5
-Servo P6_SERVO_LEV; // servo elevacao
-Servo P6_SERVO_ROT; // servo rotacao
-
-
 // Configuracao e definicao da pinagem dos motores
 void main() {
 
@@ -51,14 +38,14 @@ void main() {
   // Criar objetos (Servos)
 
   // Perna 1
-  Servo P1_SERVO_LEV(p21);
-  Servo P1_SERVO_ROT(p22);
+  Servo P1_SERVO_LEV(p21); // Servo Elevação Perna 1
+  Servo P1_SERVO_ROT(p22); // Servo Rotação Perna 1
   // Perna 3
-  Servo P3_SERVO_LEV(p23);
-  Servo P3_SERVO_ROT(p24);
+  Servo P3_SERVO_LEV(p23); // Servo Elevação Perna 3
+  Servo P3_SERVO_ROT(p24); // Servo Rotação Perna 3
   // Perna 5
-  Servo P5_SERVO_LEV(p25);
-  Servo P5_SERVO_ROT(p26);
+  Servo P5_SERVO_LEV(p25); // Servo Elevação Perna 5
+  Servo P5_SERVO_ROT(p26); // Servo Rotação Perna 5
 
 
   while(1) {
