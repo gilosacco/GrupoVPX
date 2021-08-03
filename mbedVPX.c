@@ -71,32 +71,32 @@ void main() {
     switch(MOTOR){
       case 0:
         // P1_LEV
-        P1_LEV = (P1_LEV - P1_LEV_MIN) / (P1_LEV_MAX - P1_LEV_MIN);  // Normalizar valores pros Servos
+        P1_LEV = (ANG - P1_LEV_MIN) / (P1_LEV_MAX - P1_LEV_MIN);  // Normalizar valores pros Servos
         P1_SERVO_LEV = P1_LEV;   // Atualizar valores dos Servos (outputs) com novos valores normalizados
       break;
       case 1:
         // P1_ROT
-        P1_ROT = (P1_ROT - P1_ROT_MIN) / (P1_ROT_MAX - P1_ROT_MIN);  // Normalizar valores pros Servos
+        P1_ROT = (ANG - P1_ROT_MIN) / (P1_ROT_MAX - P1_ROT_MIN);  // Normalizar valores pros Servos
         P1_SERVO_ROT = P1_ROT;   // Atualizar valores dos Servos (outputs) com novos valores normalizados
       break;
       case 2:
         // P3_LEV
-        P3_LEV = (P3_LEV - P3_LEV_MIN) / (P3_LEV_MAX - P3_LEV_MIN);  // Normalizar valores pros Servos
+        P3_LEV = (ANG - P3_LEV_MIN) / (P3_LEV_MAX - P3_LEV_MIN);  // Normalizar valores pros Servos
         P3_SERVO_LEV = P3_LEV;   // Atualizar valores dos Servos (outputs) com novos valores normalizados
       break;
       case 3:
         // P3_ROT
-        P3_ROT = (P3_ROT - P3_ROT_MIN) / (P3_ROT_MAX - P3_ROT_MIN);  // Normalizar valores pros Servos
+        P3_ROT = (ANG - P3_ROT_MIN) / (P3_ROT_MAX - P3_ROT_MIN);  // Normalizar valores pros Servos
         P3_SERVO_ROT = P3_ROT;   // Atualizar valores dos Servos (outputs) com novos valores normalizados
       break;
       case 4:
         // P5_LEV
-        P5_LEV = (P5_LEV - P5_LEV_MIN) / (P5_LEV_MAX - P5_LEV_MIN);  // Normalizar valores pros Servos
+        P5_LEV = (ANG - P5_LEV_MIN) / (P5_LEV_MAX - P5_LEV_MIN);  // Normalizar valores pros Servos
         P5_SERVO_LEV = P5_LEV;   // Atualizar valores dos Servos (outputs) com novos valores normalizados
       break;
       case 5:
         // P5_ROT
-        P5_ROT = (P5_ROT - P5_ROT_MIN) / (P5_ROT_MAX - P5_ROT_MIN);  // Normalizar valores pros Servos
+        P5_ROT = (ANG - P5_ROT_MIN) / (P5_ROT_MAX - P5_ROT_MIN);  // Normalizar valores pros Servos
         P5_SERVO_ROT = P5_ROT;   // Atualizar valores dos Servos (outputs) com novos valores normalizados
       break;
     }
