@@ -24,3 +24,27 @@ Primeiro começamos pensando na lógica da movimentação para a caminhada. E an
 </p>
 
 A partir desses diagramas começamos a desenvolver o código [FormigaCaminhadaVPX](FormigaCaminhadaVPX.c), que realiza o controle da trajetória das pernas através de uma lógica incremental em loop dos motores. Também consideramos uma variação inicial dos parâmetros de cada motor, que seriam calculados empiricamente (caso fosse possível). A comunicação nesse código ficou apenas indicada através de comentários, simbolizando onde seria realizada o envio e o recebimento de dados.
+
+O outro código [(mbedVPX.c)](mbedVPX.c) roda dentro das duas MBEDS. Ele recebe os ângulos via CAN da Toradex, normaliza com valores máximos e mínimos definidos empiricamente, e envia isso pros motores usando a biblioteca *Servo.h*. Cada MBED é responsável por repassar os valores para 3 motores, o código apenas varia os números dos motores (1,3,5 por 2,4,6).
+
+O objetivo final então do nosso grupo seria que toda a lógica da caminhada fosse realizada dentro da Toradex (que receberia os comandos *frente, trás, direita e esquerda* do usuário), e as MBEDS apenas teriam o código para repassar os valores que cada motor deveria executar. Infelizmente a comunicação CAN entre a Toradex e a MBED não foi bem sucedida.
+
+## Apêndice
+
+Apenas para ficar documentado, em sala de aula aprendemos a comunicar com a Toradex pelo terminal do Linux (enviar o código ARM).
+
+1. Verificar se o SDK está instalado
+2. Realizar o *Cross Compiling*:
+```
+> ${CC} -Wall codigo.c -o codigoARM
+```
+3. Enviar o código para Toradex:
+```
+> scp codigoARM root@172.17.2.XXX/home/root
+```
+4. Em outro terminal, executar o código dentro da Toradex:
+```
+> ssh root@172.17.2.XXX
+> ./codigoARM
+```
+
